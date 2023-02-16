@@ -6,7 +6,7 @@
       <div class="field">
         <input (input)="onInput($any($event.target).value)" class="input" type="text">
       </div>
-      <div class="box has-text-centered">
+      <div *ngIf="randomText === enteredText" class="box has-text-centered">
         <h1 class="title">Success!</h1>
       </div>
     </div>
